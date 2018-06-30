@@ -27,7 +27,7 @@ var fakeVideoData = [{
       }
     }
   }
-}, {
+}, {
   etag: 'ujBKBmLk',
   id: {
     videoId: '000003'
@@ -41,7 +41,7 @@ var fakeVideoData = [{
       }
     }
   }
-}, {
+}, {
   etag: 'Nj7xszf8',
   id: {
     videoId: '000004'
@@ -55,7 +55,7 @@ var fakeVideoData = [{
       }
     }
   }
-}, {
+}, {
   etag: 'I2w-7nRI',
   id: {
     videoId: '000005'
