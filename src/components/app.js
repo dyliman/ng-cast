@@ -3,16 +3,19 @@ angular.module('video-player')
   .component('app', {
     templateUrl: 'src/templates/app.html', 
   
-    controller: function() {
+    controller: function($scope, youTube) {
       
       this.videos = window.exampleVideoData;
       this.currentVideo = window.exampleVideoData[0];
-      console.log(this.videos);
       
-      this.onClick = function(video) {
-        console.log(video);
+      
+      this.selectVideo = (video) => {
         this.currentVideo = video;
-        console.log(this.currentVideo);
+      };
+      
+      this.searchResults = (query) => {
+        this.videos = youTube.search(query);
+        this.currentVideo = this.videos[0];
       };
     }
 

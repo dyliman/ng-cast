@@ -6,7 +6,7 @@ angular.module('video-player')
       onClick: '<'
     },
     controller: function() {
-
+      
     }
   
   });
